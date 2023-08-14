@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(0, 11, 26);
+}
+.container{
+    background-color: plum;
+    margin: 40px auto;
+    width: 45%;
+    border: 4px solid hotpink;
+}
+.banner{
+    margin-bottom: 10px;
+    height: 400px;
+    width: 100%;
+    background-image: url('img/Lcountach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.thumbnail{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 5px;
+}
+.thumbnail div{
+    min-width: 150px;
+    min-height: 150px;
+}
+.thumbnail div:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade{
+    opacity: 0;
+    animation: fadeIn 0.4s forwards;
+}
+.active{
+    opacity: 0.5;
+    box-shadow: inset 0 0 3px 3px rgba(128, 0, 128, 0.877);
+}
+
+.thumb1{background-image: url('img/coffe.jpg'); background-size: cover; background-position: center;}
+.thumb2{background-image: url('img/cafe\ background.jpg'); background-size: cover; background-position: center;}
+.thumb3{background-image: url('img/ferariCoroleno.jpg'); background-size: cover; background-position: center;}
+.thumb4{background-image: url('img/Mavatar.jpg'); background-size: cover; background-position: center;}
+.thumb5{background-image: url('img/teslaplaid.jpg'); background-size: cover; background-position: center;}
+.thumb6{background-image: url('img/Lcountach.jpg'); background-size: cover; background-position: center;}
+.thumb7{background-image: url('img/batu.png'); background-size: cover; background-position: center;}
+.thumb8{background-image: url('img/gunting.png'); background-size: cover; background-position: center;}
+.thumb9{background-image: url('img/kertas.png'); background-size: cover; background-position: center;}
